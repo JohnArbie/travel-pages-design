@@ -841,7 +841,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
-
+    transition: all .5s ease; 
 }
 
 .card-header {
