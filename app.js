@@ -11,3 +11,15 @@ menu.addEventListener('click', function(){
 window.addEventListener('scroll', function(){
     gotoTop.style.display = 'block'
 })
+
+const cards = document.querySelectorAll('.product__card')
+
+cards.forEach(oneCard => {
+    oneCard.addEventListener("mouseover", () => {
+        oneCard.style.transform = "scale(1.02)"
+    })
+
+    oneCard.addEventListener("mouseleave", () => {
+        oneCard.style.transform = "scale(1)"
+    })
+})
